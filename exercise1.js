@@ -1,0 +1,23 @@
+﻿var regex1 = /.abc/;
+var regex2 = /a+b?!!1{4}/;
+var regex3 = /.{3}a\.b/;
+var regex4 = /\w/;
+var regex5 = /\s/;
+var regex6 = /\d/;
+var regex7 = /./;
+var regex8 = /[abc]/;
+var regex9 = /(abc)/;
+var regex10 = /[a-zA-Z_\$\.]+[A-Za-z_\$0-9\.]*@[a-zA-Z_\$\.]+[a-zA-Z_\$0-9\.]*\.(com|net|org){1}/;
+var regex11 = /\([0oOn]{1}(_|\s)[0oOn]{1}\)/;
+
+console.log(regex1.test("aabc"));
+console.log(regex2.test("aaab!!1111"));
+console.log(regex3.test("bola.b"));
+console.log(regex4.test("a"));
+console.log(regex5.test(" "));
+console.log(regex6.test("9"));
+console.log(regex7.test("k"));
+console.log(regex8.test("b"));
+console.log(regex9.test("abc"));
+console.log(regex10.test("abc123@bola.com"));
+console.log(regex11.test("(0_0)"));
